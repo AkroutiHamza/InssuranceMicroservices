@@ -1,0 +1,19 @@
+info:
+  build:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+    
+    
+spring:
+   data:
+      mongodb.host: 127.0.0.1
+      mongodb.port: 27017
+      mongodb.uri: mongodb://127.0.0.1/file-storageTest
+      mongo.repositories.enabled: true 
+   
+   http:
+      multipart:
+       max-file-size: 1048576KB
+       max-request-size: 1048576KB
